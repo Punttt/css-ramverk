@@ -8,5 +8,37 @@
     <script type="module" src="/src/tailwind.js"></script>
   </head>
   <body>
+    <header class="bg-green-800 text-white">
+      <nav class="mx-auto max-w-5xl px-5">
+        <div class="flex h-16 justify-between items-center">
+            <a href="/" class="text-xl font-bold">CSS-ramverk</a>
+
+            <!-- Hamburgerknapp (mobil) -->
+            <button id="menu-toggle" class="md:hidden p-2 rounded hover:bg-slate-700 cursor-pointer"
+                    aria-label="Öppna meny" aria-expanded="false" aria-controls="menu">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+
+            <!-- Meny (desktop) -->
+            <ul class="hidden md:flex gap-6">
+              <li><a href="/" class="hover:text-yellow-400">Hem</a></li>
+              <li><a href="/tailwind.html" class="hover:text-yellow-400">Tailwind</a></li>
+              <li><a href="/bootstrap.html" class="hover:text-yellow-400">Bootstrap</a></li>
+              <li><a href="/publicering.html" class="hover:text-yellow-400">Publicering</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Länkar (mobil) -->
+        <ul id="menu" class="hidden md:hidden flex-col gap-2 pb-4 text-center bg-green-700">
+          <li><a href="/" class="block py-4 hover:text-yellow-400">Start</a></li>
+          <li><a href="/tailwind.html" class="block py-4 hover:text-yellow-400">Tailwind</a></li>
+          <li><a href="/bootstrap.html" class="block py-4 hover:text-yellow-400">Bootstrap</a></li>
+          <li><a href="/publicering.html" class="block py-4 hover:text-yellow-400">Publicering</a></li>
+        </ul>
+
+    </header>
   </body>
 </html>
