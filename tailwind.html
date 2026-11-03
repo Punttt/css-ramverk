@@ -38,7 +38,97 @@
           <li><a href="/bootstrap.html" class="block py-4 hover:text-yellow-400">Bootstrap</a></li>
           <li><a href="/publicering.html" class="block py-4 hover:text-yellow-400">Publicering</a></li>
         </ul>
-
     </header>
+    <main class="mx-auto max-w-5xl p-5">
+      <!-- Intro om tailwind -->
+      <section id="intro" class="pb-5">
+        <h1 class="text-4xl font-bold">Tailwind</h1>
+        <p class="pb-4">Kort ingress om vad tailwind är.</p>
+        <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="bg-green-800 p-3 inline-block text-white rounded hover:bg-green-700">Läs mer om tailwind</a>
+      </section>
+
+      <!-- Om ramverket -->
+      <section id="om" class="pb-5">
+        <h2 class="text-2xl font-semibold">Om ramverket</h2>
+        <p>Vad det är, utility first, vem som står bakom den, hur man installera den.</p>
+      </section>
+
+      <!-- Utvärdering -->
+      <section id="utvardering" class="pb-5">
+        <h2 class="text-2xl pb-2 font-semibold">Utvärdering</h2>
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="bg-green-200 flex-1 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold">Fördelar</h3>
+            <ul class="list-disc pl-5">
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+          <div class="bg-red-200 flex-1 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold">Nackdelar</h3>
+            <ul class="list-disc pl-5">
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabell -->
+      <section id="tabell" class="pb-5">
+        <h2 class="text-2xl pb-2 font-semibold">Klocksamling</h2>
+        <div class="overflow-x-auto rounded-lg shadow">
+          <table class="w-full text-left">
+            <thead>
+              <tr>
+                <th scope="col">Märke</th>
+                <th scope="col">Modell</th>
+                <th scope="col">Urverk</th>
+                <th scope="col">Pris (kr)</th>
+                <th scope="col">I samlingen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Seiko</td>
+                <td>5 Sports</td>
+                <td>Automatiskt</td>
+                <td>3 500</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Tissot</td>
+                <td>PRX Powermatic 80</td>
+                <td>Automatiskt</td>
+                <td>8 500</td>
+                <td>Nej</td>
+              </tr>
+              <tr>
+                <td>Hamilton</td>
+                <td>Khaki Field Mechanical</td>
+                <td>Manuellt</td>
+                <td>6 000</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Casio</td>
+                <td>G-Shock GA-2100</td>
+                <td>Kvarts</td>
+                <td>1 200</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Omega</td>
+                <td>Speedmaster Moonwatch</td>
+                <td>Manuellt</td>
+                <td>80 000</td>
+                <td>Nej</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
   </body>
 </html>
