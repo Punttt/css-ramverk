@@ -129,6 +129,40 @@
         </div>
       </section>
 
+      <!-- Formulär -->
+      <section id="formular" class="pb-5">
+        <h2 class="text-2xl pb-2 font-semibold">Lägg till klocka</h2>
+        <form class="bg-gray-200 rounded-lg shadow px-5 py-5">
+          <label class="block" for="marke">Märke</label>
+          <input class="w-full bg-white p-2 inline-block rounded my-2" type="text" id="marke" name="marke" placeholder="t.ex. Seiko" required>
+          
+          <label class="block" for="modell">Modell</label>
+          <input class="w-full bg-white p-2 inline-block rounded my-2" type="text" id="modell" name="modell" placeholder="t.ex. 5 Sports" required>
+          
+
+          
+          <label class="block" for="urverk">Urverk</label>
+          <select class="w-full bg-white p-2 inline-block rounded my-2" id="urverk" name="urverk" required>
+            <option value="">Välj urverk...</option>
+            <option value="automatiskt">Automatiskt</option>
+            <option value="manuellt">Manuellt</option>
+            <option value="kvarts">Kvarts</option>
+          </select>
+
+          <label class="block" for="pris">Pris (kr)</label>
+          <input class="w-full bg-white p-2 inline-block rounded my-2" type="number" id="pris" name="pris" min="0" placeholder="t.ex. 3500">
+        
+
+          <label class="block" for="beskrivning">Beskrivning</label>
+          <textarea class="w-full bg-white p-2 inline-block rounded my-2" id="beskrivning" name="beskrivning" rows="4" placeholder="Valfri beskrivning av klockan"></textarea>
+
+          <input type="checkbox" id="samling" name="samling">
+          <label for="samling">Finns i samlingen</label> </br>
+
+          <button type="submit" class="bg-green-800 p-3 inline-block text-white rounded hover:bg-green-700 mt-4">Lägg till</button>
+        </form>
+      </section>
+
     </main>
   </body>
 </html>
