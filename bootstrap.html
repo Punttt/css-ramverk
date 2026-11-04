@@ -8,5 +8,139 @@
     <script type="module" src="/src/bootstrap.js"></script>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/">CSS-ramverk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarBasic">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tailwind.html">Tailwind</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/bootstrap.html">Bootstrap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/publicering.html">Publicering</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <section id="intro" class="mb-5">
+        <!-- display-5 = stor rubrik, fw-bold = fetstil -->
+        <h1 class="display-5 fw-bold">Bootstrap</h1>
+        <!-- lead = större ingresstext -->
+        <p class="lead">Kort ingress om vad Bootstrap är.</p>
+        <!-- btn = knappstil, btn-success = grön -->
+        <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="btn btn-success">Läs mer om Bootstrap</a>
+      </section>
+
+      <!-- Om ramverket -->
+      <section id="om" class="mb-5">
+        <h2 class="fw-semibold">Om ramverket</h2>
+        <p>Vem som skapat det, när det släpptes.</p>
+      </section>
+
+      <!-- Utvärdering -->
+      <section id="utvardering" class="mb-5">
+        <h2 class="fw-semibold">Utvärdering</h2>
+        <p>Mina upplevelser av Bootstrap.</p>
+
+        <!-- row = rad i gridet, g-3 = mellanrum mellan kolumnerna -->
+        <div class="row g-3">
+          <!-- col-md-6 = halva bredden från md, full bredd på mobil -->
+          <div class="col-md-6">
+            <!-- card = kortkomponent, h-100 = lika höga kort, bg-success-subtle = ljusgrön -->
+            <div class="card h-100 bg-success-subtle border-success">
+              <div class="card-body">
+                <h3 class="card-title h5">Fördelar</h3>
+                <ul class="mb-0">
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- samma kort fast rött: danger -->
+            <div class="card h-100 bg-danger-subtle border-danger">
+              <div class="card-body">
+                <h3 class="card-title h5">Nackdelar</h3>
+                <ul class="mb-0">
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tabell" class="mb-5">
+        <h2 class="fw-semibold">Klocksamling</h2>
+        <div class="table-responsive rounded border">
+          <table class="table table-light mb-0">
+            <thead class="table-success">
+              <tr>
+                <th scope="col">Märke</th>
+                <th scope="col">Modell</th>
+                <th scope="col">Urverk</th>
+                <th scope="col">Pris (kr)</th>
+                <th scope="col">I samlingen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Seiko</td>
+                <td>5 Sports</td>
+                <td>Automatiskt</td>
+                <td>3 500</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Tissot</td>
+                <td>PRX Powermatic 80</td>
+                <td>Automatiskt</td>
+                <td>8 500</td>
+                <td>Nej</td>
+              </tr>
+              <tr>
+                <td>Hamilton</td>
+                <td>Khaki Field Mechanical</td>
+                <td>Manuellt</td>
+                <td>6 000</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Casio</td>
+                <td>G-Shock GA-2100</td>
+                <td>Kvarts</td>
+                <td>1 200</td>
+                <td>Ja</td>
+              </tr>
+              <tr>
+                <td>Omega</td>
+                <td>Speedmaster Moonwatch</td>
+                <td>Manuellt</td>
+                <td>80 000</td>
+                <td>Nej</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>        
+      </section>
+
+    </main>
+
   </body>
 </html>
