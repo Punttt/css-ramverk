@@ -39,7 +39,7 @@
         <!-- display-5 = stor rubrik, fw-bold = fetstil -->
         <h1 class="display-5 fw-bold">Bootstrap</h1>
         <!-- lead = större ingresstext -->
-        <p class="lead">Kort ingress om vad Bootstrap är.</p>
+        <p class="lead">Bootstrap är ett CSS-ramverk med färdiga komponenter, till exempel knappar, menyer, kort och formulär. Man klistrar in komponenterna och ändrar lite, så har man en snygg sida snabbt.</p>
         <!-- btn = knappstil, btn-success = grön -->
         <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="btn btn-success">Läs mer om Bootstrap</a>
       </section>
@@ -47,13 +47,16 @@
       <!-- Om ramverket -->
       <section id="om" class="mb-5">
         <h2 class="fw-semibold">Om ramverket</h2>
-        <p>Vem som skapat det, när det släpptes.</p>
+        <p>Bootstrap skapades av Mark Otto och Jacob Thornton på Twitter och släpptes 2011. Det är ett av de mest kända CSS-ramverken och i dag används version 5.</p>
+        <p>Skillnaden mot Tailwind är att Bootstrap har färdiga komponenter. Skriver man btn btn-success får man en grön knapp med padding, rundade hörn och hover direkt. Det går snabbt, men sidan blir också lite lik andra Bootstrap-sidor.</p>
+        <p>Layouten bygger på ett grid med 12 kolumner. Med till exempel col-md-6 tar ett element halva bredden på större skärmar och hela bredden på mobil. Hamburgermenyn fungerar direkt, utan att man behöver skriva egen JavaScript.</p>
+        <p>Jag installerade Bootstrap via npm och kopplade in det i Vite.</p>
       </section>
 
       <!-- Utvärdering -->
       <section id="utvardering" class="mb-5">
         <h2 class="fw-semibold">Utvärdering</h2>
-        <p>Mina upplevelser av Bootstrap.</p>
+        <p>Bootstrap gick snabbt att komma igång med. Man letar upp en färdig komponent, klistrar in den och gör några små ändringar, så ser det bra ut direkt. Precis som med Tailwind behövde jag söka mycket i början, men här letade jag efter hela komponenter istället för enskilda klasser. Jag gillade att komponenterna hade en ren och snygg design från början. Nackdelen är att sidan blir lite generisk och inte lika skräddarsydd som med Tailwind.</p>
 
         <!-- row = rad i gridet, g-3 = mellanrum mellan kolumnerna -->
         <div class="row g-3">
@@ -64,8 +67,10 @@
               <div class="card-body">
                 <h3 class="card-title h5">Fördelar</h3>
                 <ul class="mb-0">
-                  <li>...</li>
-                  <li>...</li>
+                  <li>Snabbt att bygga, man klistrar in färdiga komponenter</li>
+                  <li>Ren och snygg design direkt</li>
+                  <li>Lite kod, till exempel tabellen som bara behövde klasser på table</li>
+                  <li>Hamburgermenyn fungerade utan egen JS</li>
                 </ul>
               </div>
             </div>
@@ -77,8 +82,10 @@
               <div class="card-body">
                 <h3 class="card-title h5">Nackdelar</h3>
                 <ul class="mb-0">
-                  <li>...</li>
-                  <li>...</li>
+                  <li>Sidan blir lätt generisk, många Bootstrap-sajter ser likadana ut</li>
+                  <li>Inte lika skräddarsytt som Tailwind</li>
+                  <li>Egna värden kräver egen CSS, som när jag ville ha 1024px maxbredd</li>
+                  <li>Man måste förstå komponentens struktur för att kunna ändra i den</li>
                 </ul>
               </div>
             </div>
