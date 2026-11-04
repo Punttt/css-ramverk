@@ -147,6 +147,50 @@
         </div>        
       </section>
 
+      <!-- Formulär -->
+      <section id="formular" class="mb-5">
+        <h2 class="fw-semibold">Lägg till klocka</h2>
+        <form class="bg-light p-4 rounded border">
+
+          <div class="mb-3">
+            <label for="marke" class="form-label">Märke</label>
+            <input type="text" class="form-control" id="marke" name="marke" placeholder="t.ex. Seiko" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modell" class="form-label">Modell</label>
+            <input type="text" class="form-control" id="modell" name="modell" placeholder="t.ex. 5 Sports" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="urverk" class="form-label">Urverk</label>
+            <select class="form-select" id="urverk" name="urverk" required>
+              <option value="">Välj urverk...</option>
+              <option value="automatiskt">Automatiskt</option>
+              <option value="manuellt">Manuellt</option>
+              <option value="kvarts">Kvarts</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="pris" class="form-label">Pris (kr)</label>
+            <input type="number" class="form-control" id="pris" name="pris" min="0" placeholder="t.ex. 3500">
+          </div>
+
+          <div class="mb-3">
+            <label for="beskrivning" class="form-label">Beskrivning</label>
+            <textarea class="form-control" id="beskrivning" name="beskrivning" rows="4" placeholder="Valfri beskrivning av klockan"></textarea>
+          </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="samling" name="samling">
+            <label for="samling" class="form-check-label">Finns i samlingen</label>
+          </div>
+
+          <button type="submit" class="btn btn-success">Lägg till</button>
+        </form>
+      </section>
+
     </main>
 
   </body>
