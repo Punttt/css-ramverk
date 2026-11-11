@@ -39,30 +39,31 @@
           <li><a href="/publicering.html" class="block py-4 hover:text-yellow-400">Publicering</a></li>
         </ul>
     </header>
+
     <main class="mx-auto max-w-5xl p-5">
       <!-- Intro om tailwind -->
-      <section id="intro" class="pb-5">
-        <h1 class="text-4xl font-bold">Tailwind</h1>
-        <p class="pb-4">Tailwind CSS är ett utility-first CSS-ramverk där man bygger designen direkt i HTML med små, återanvändbara klasser. Istället för färdiga komponenter får man byggstenar för till exempel avstånd, färger, typografi och layout, och kombinerar dem fritt till sin egen design. </p>
+      <section id="intro" class="mb-8">
+        <h1 class="text-4xl font-bold mb-2">Tailwind</h1>
+        <p class="mb-4 text-xl font-light">Tailwind CSS är ett utility-first CSS-ramverk där man bygger designen direkt i HTML med små, återanvändbara klasser. Istället för färdiga komponenter får man byggstenar för till exempel avstånd, färger, typografi och layout, och kombinerar dem fritt till sin egen design. </p>
         <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="bg-green-800 p-3 inline-block text-white rounded hover:bg-green-700">Läs mer om tailwind</a>
       </section>
 
       <!-- Om ramverket -->
-      <section id="om" class="pb-5">
-        <h2 class="text-2xl font-semibold">Om ramverket</h2>
-        <p class="mb-2">Tailwind skapades av Adam Wathan och släpptes 2017. I dag är det ett av de mest använda CSS-ramverken.</p>
-        <p class="mb-2">Det som skiljer Tailwind från till exempel Bootstrap är att det inte finns några färdiga knappar eller menyer. Istället får man byggstenar som man sätter ihop själv. Vill man ha padding skriver man p-4, och vill man ha grön bakgrund skriver man bg-green-800. Det gör att man har full koll på hur allt ser ut, men det kräver också mer jobb.</p>
-        <p class="mb-2">För att få sidan att fungera på olika skärmstorlekar lägger man till ett prefix före klassen, till exempel md: som bara gäller på större skärmar. På samma sätt fungerar hover: för när man för musen över något.</p>
+      <section id="om" class="mb-8">
+        <h2 class="text-3xl font-semibold mb-2">Om ramverket</h2>
+        <p class="mb-4">Tailwind skapades av Adam Wathan och släpptes 2017. I dag är det ett av de mest använda CSS-ramverken.</p>
+        <p class="mb-4">Det som skiljer Tailwind från till exempel Bootstrap är att det inte finns några färdiga knappar eller menyer. Istället får man byggstenar som man sätter ihop själv. Vill man ha padding skriver man p-4, och vill man ha grön bakgrund skriver man bg-green-800. Det gör att man har full koll på hur allt ser ut, men det kräver också mer jobb.</p>
+        <p class="mb-4">För att få sidan att fungera på olika skärmstorlekar lägger man till ett prefix före klassen, till exempel md: som bara gäller på större skärmar. På samma sätt fungerar hover: för när man för musen över något.</p>
         <p>Jag installerade Tailwind via npm och kopplade det till Vite, som jag använde som utvecklingsmiljö. När sidan byggs tar Tailwind bara med de klasser jag faktiskt har använt, så CSS-filen blir liten.</p>
       </section>
 
       <!-- Utvärdering -->
-      <section id="utvardering" class="pb-5">
-        <h2 class="text-2xl pb-2 font-semibold">Utvärdering</h2>
+      <section id="utvardering" class="mb-8">
+        <h2 class="text-3xl mb-2 font-semibold">Utvärdering</h2>
         <p class="mb-4">I början kändes Tailwind lite grötigt. Det finns väldigt många klasser och jag behövde slå upp nästan allt i dokumentationen. Men när jag väl lärt mig de vanligaste, som margin, padding, färger och flex, gick det snabbt att bygga, eftersom jag aldrig behövde lämna HTML-filen. Jag tror att Tailwind blir väldigt effektivt när man har kommit in i det.</p>
         <div class="flex flex-col md:flex-row gap-4">
           <div class="bg-green-200 flex-1 p-4 rounded-lg shadow">
-            <h3 class="text-xl font-semibold">Fördelar</h3>
+            <h3 class="text-xl font-semibold mb-2">Fördelar</h3>
             <ul class="list-disc pl-5">
               <li>Stylar direkt i html filen</li>
               <li>ingen namngivning av klasser</li>
@@ -71,7 +72,7 @@
             </ul>
           </div>
           <div class="bg-red-200 flex-1 p-4 rounded-lg shadow">
-            <h3 class="text-xl font-semibold">Nackdelar</h3>
+            <h3 class="text-xl font-semibold mb-2">Nackdelar</h3>
             <ul class="list-disc pl-5">
               <li>Brant inlärningskurva i början, mycket att slå upp</li>
               <li>lång listor gör html lite svårläst</li>
@@ -83,8 +84,8 @@
       </section>
 
       <!-- Tabell -->
-      <section id="tabell" class="pb-5">
-        <h2 class="text-2xl pb-2 font-semibold">Klocksamling</h2>
+      <section id="tabell" class="mb-8">
+        <h2 class="text-3xl mb-2 font-semibold">Klocksamling</h2>
         <div class="overflow-x-auto rounded-lg shadow">
           <table class="w-full text-left">
             <thead class="bg-green-200 text-gray-800">
@@ -138,8 +139,8 @@
       </section>
 
       <!-- Formulär -->
-      <section id="formular" class="pb-5">
-        <h2 class="text-2xl pb-2 font-semibold">Lägg till klocka</h2>
+      <section id="formular" class="mb-8">
+        <h2 class="text-3xl mb-2 font-semibold">Lägg till klocka</h2>
         <form class="bg-gray-200 rounded-lg shadow px-5 py-5">
           <label class="block" for="marke">Märke</label>
           <input class="w-full bg-white p-2 inline-block rounded my-2" type="text" id="marke" name="marke" placeholder="t.ex. Seiko" required>

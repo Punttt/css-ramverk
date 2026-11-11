@@ -40,7 +40,7 @@
         </ul>
     </header>
     <main>
-      <section id="hero" class="bg-green-200 h-screen flex flex-col justify-center items-center text-center">
+      <section id="hero" class="bg-green-200 min-h-[calc(100svh-4rem)] flex flex-col justify-center items-center text-center">
         <div class="mx-auto max-w-5xl p-5">
           <h1 class="text-4xl font-bold mb-5">Välkommen till min sida.</h1>
           <a href="#intro" class="bg-green-800 p-3 inline-block text-white rounded hover:bg-green-700">Läs mer...</a>
@@ -48,9 +48,27 @@
       </section>
 
       <div class="mx-auto max-w-5xl p-5">
-        <section id="intro">
-          <h2 class="text-2xl font-semibold pb-2">Intro</h2>
+        <section id="intro" class="mb-8">
+          <h2 class="text-3xl font-semibold pb-2">Intro</h2>
           <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, consequatur. Dolorum est iusto deleniti dignissimos et voluptas totam, doloribus aut fugiat culpa reiciendis animi qui hic adipisci natus earum a?</p>
+        </section>
+
+        <section id="ramverk" class="mb-8">
+          <h2 class="text-3xl font-semibold mb-4">Ramverk jag använder</h2>
+
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex-1 flex flex-col p-5 rounded-lg border border-gray-200 shadow-sm">
+              <h3 class="text-xl font-semibold mb-2">Tailwind</h3>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo natus necessitatibus nostrum ipsum exercitationem magni ratione maiores minus.</p>
+              <a href="/tailwind.html" class="mt-auto self-start bg-green-800 p-3 text-white rounded hover:bg-green-700">Läs mer om Tailwind</a>
+            </div>
+
+            <div class="flex-1 flex flex-col p-5 rounded-lg border border-gray-200 shadow-sm">
+              <h3 class="text-xl font-semibold mb-2">Bootstrap</h3>
+              <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aspernatur quasi ipsum totam, consequatur eos alias repellat delectus et animi dolorum.</p>
+              <a href="/bootstrap.html" class="mt-auto self-start bg-green-800 p-3 text-white rounded hover:bg-green-700">Läs mer om Bootstrap</a>
+            </div>
+          </div>
         </section>
       </div>
     </main>
