@@ -44,14 +44,14 @@
       <!-- Intro -->
       <section id="intro" class="mb-8">
         <h1 class="text-4xl font-bold mb-4">Publicering</h1>
-        <p class="mb-2">Kort ingress: vilken plattform jag valt och varför.</p>
+        <p class="mb-4 text-xl font-light">Jag valde att publicera sidan på Netlify. Det är gratis, enkelt att komma igång med och kopplas direkt till GitHub, så sidan uppdateras automatiskt när jag pushar kod.</p>
         <a href="https://www.netlify.com" target="_blank" rel="noopener" class="bg-green-800 p-3 inline-block text-white rounded hover:bg-green-700">Läs mer om Netlify</a>
       </section>
 
       <!-- Om Netlify -->
       <section id="om" class="mb-8">
         <h2 class="text-3xl font-semibold mb-2">Om Netlify</h2>
-        <p>Vad Netlify är och vad det används till.</p>
+        <p>Netlify är en plattform för att publicera webbplatser. Man kopplar ett git-repo och Netlify bygger och publicerar sidan åt en. Det passar bra för statiska sidor och projekt byggda med till exempel Vite, React eller Astro, men det går också att köra serverfunktioner.</p>
       </section>
 
       <!-- Kodstöd och kostnad -->
@@ -59,12 +59,12 @@
         <h2 class="text-3xl font-semibold mb-2">Kodstöd och kostnad</h2>
         <div class="flex flex-col md:flex-row gap-4">
           <div class="flex-1 p-4 rounded-xl border border-gray-200 shadow-sm">
-            <h3 class="text-2xl mb-2">Kodstöd</h3>
-            <p>Vilka språk och ramverk som stöds.</p>
+            <h3 class="text-xl font-semibold mb-2">Kodstöd</h3>
+            <p>Själva sidan kan vara byggd med vanlig HTML, CSS och JavaScript eller med ett ramverk eller byggverktyg som Vite. För kod som körs på servern, så kallade Netlify Functions, stöds JavaScript, TypeScript och Go.</p>
           </div>
           <div class="flex-1 p-4 rounded-xl border border-gray-200 shadow-sm">
-            <h3 class="text-2xl mb-2">Kostnad</h3>
-            <p>Gratisplan och vad som ingår, betalplaner.</p>
+            <h3 class="text-xl font-semibold mb-2">Kostnad</h3>
+            <p>Det finns en gratisplan med 300 krediter i månaden, som räcker gott för mindre projekt som det här. Den har bland annat obegränsade förhandsvisningar och egna domäner med SSL. Behöver man mer finns betalplaner, från 9 dollar i månaden för Personal och 20 dollar för Pro.</p>
           </div>
         </div>
       </section>
@@ -72,33 +72,37 @@
       <!-- Arbetssätt -->
       <section id="arbetssatt" class="mb-8">
         <h2 class="text-3xl font-semibold mb-2">Så publicerar jag</h2>
-        <ol class="list-decimal ml-4">
-          <li>Steg 1</li>
-          <li>Steg 2</li>
-          <li>Steg 3</li>
-          <li>Steg 4</li>
+        <ol class="list-decimal ml-4 space-y-2">
+          <li>Jag lägger upp projektet i ett git-repo på GitHub.</li>
+          <li>Jag skapar ett nytt projekt i Netlify, kopplar det till repot och anger byggkommandot <code>npm run build</code> och mappen <code>dist</code>.</li>
+          <li>När jag har gjort ändringar lokalt committar och pushar jag dem till GitHub.</li>
+          <li>Netlify märker den nya pushen, bygger sidan och publicerar den uppdaterade versionen automatiskt.</li>
         </ol>
       </section>
 
       <!-- Utvärdering -->
       <section id="utvardering" class="mb-8">
         <h2 class="text-3xl font-semibold mb-2">Utvärdering</h2>
-        <p class="mb-4">Mina upplevelser av Netlify.</p>
+        <p class="mb-4">Netlify var enkelt att komma igång med. Det tog bara några minuter att koppla repot och få sidan publicerad, och sedan behövde jag aldrig tänka på det igen. Det enda som störde lite var att det ibland tog en stund innan ändringarna syntes efter en push.</p>
         <div class="flex flex-col md:flex-row gap-4">
           <div class="flex-1 p-4 rounded-xl border border-gray-200 shadow-sm">
-            <h3 class="text-2xl mb-2">Fördelar</h3>
+            <h3 class="text-xl font-semibold mb-2">Fördelar</h3>
             <ul class="list-disc ml-5">
-              <li>...</li>
+              <li>Enkelt att komma igång</li>
+              <li>Gratis för mindre projekt</li>
+              <li>Bra koppling till GitHub, publicerar automatiskt vid push</li>
+              <li>Går att anpassa, till exempel byta sidans namn eller lägga till egen domän</li>
             </ul>
           </div>
           <div class="flex-1 p-4 rounded-xl border border-gray-200 shadow-sm">
-            <h3 class="text-2xl mb-2">Nackdelar</h3>
+            <h3 class="text-xl font-semibold mb-2">Nackdelar</h3>
             <ul class="list-disc ml-5">
-              <li>...</li>
+              <li>Kan kännas lite segt ibland</li>
+              <li>Uppdateringar från git kan dröja innan de syns</li>
             </ul>
           </div>
         </div>
       </section>
-    </main>  
+    </main>
   </body>
 </html>
